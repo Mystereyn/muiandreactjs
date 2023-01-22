@@ -1,16 +1,8 @@
-import {ThemeProvider, createTheme} from "@mui/material/styles";
-import CssBaseline from "@mui/material/CssBaseline";
-
-
-let theme = createTheme({
-  palette : {
-    mode : "dark",
-  }
-});
+import CustomeTheme from "./components/ThemeMUI";
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={ThemeMUI}>
       <CssBaseline />
       <main> Testing theme</main>
     </ThemeProvider>
