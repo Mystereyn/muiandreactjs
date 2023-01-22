@@ -4,9 +4,9 @@ import CssBaseline from "@mui/material/CssBaseline";
 
 let theme = createTheme({
   palette : {
-    mode : "dark"
+    mode : "dark",
   }
-})
+});
 
 function App() {
   return (
