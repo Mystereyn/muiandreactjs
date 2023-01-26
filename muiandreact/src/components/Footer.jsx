@@ -6,15 +6,25 @@ import {
     CDBFooterLink, 
     CDBContainer,
     CDBBtn,
-    CDBIcon
+    CDBIcon,
+    CDBBox
 } from "cdbreact";
 
-export function customizeFooter()  {
+export const customizeFooter = () => {
     return (
         <CDBFooter className="shadow">
             <CDBBox 
-            display="flex"
-            justifyContent=></CDBBox>
+
+                display="flex"
+                justifyContent="between"
+                alignItems="center"
+                className="mx-auto py-4 flex-wrap"
+                style={{
+                width : "80%"}}>
+            </CDBBox>
         </CDBFooter>
     )
-}
+};
+export default customizeFooter;
+
+customizeFooter.run();
